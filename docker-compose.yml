@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  pacmancanvas:
+    image: pacman-canvas
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 80:80
+    container_name: pacman-canvas-container
